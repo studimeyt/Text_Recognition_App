@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_shade_1"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/idWlcmMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:text="Welcome, Harshit!"></TextView>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="125dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/logo"
+        android:src="@drawable/scanner"
+
+        ></ImageView>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Text Recognition Application"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/disp_head"
+        android:textColor="@color/white"
+        ></TextView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/disp_head"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="40dp"
+        android:text="Capture Image"
+        android:textColor="@color/white"
+        android:id="@+id/captureBtn"
+        android:background="@drawable/button_bg"
+        app:backgroundTint="@color/techno_blue"></Button>
+
+    <Button
+        android:id="@+id/loginButtonHere"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/captureBtn"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_bg"
+        android:text="Logout"
+
+        app:backgroundTint="@color/techno_blue" />
+
+</RelativeLayout>

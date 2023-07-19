@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_shade_1"
+    tools:context=".LogInSignUp">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="125dp"
+        android:src="@drawable/scanner"
+        android:id="@+id/idCaptureImage"></ImageView>
+
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idCaptureImage"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/white"
+        android:hint="Username"
+        android:textColorHint="@color/techno_blue"
+        android:autofillHints="emailAddress"
+        app:backgroundTint="@color/techno_blue" />
+
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameEditText"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Password"
+        android:textColorHint="@color/techno_blue"
+        android:autofillHints="password"
+        android:inputType="textPassword"
+        app:backgroundTint="@color/techno_blue"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordEditText"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:backgroundTint="@color/techno_blue"
+        android:background="@drawable/button_bg"
+        android:text="Login"/>
+
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:backgroundTint="@color/techno_blue"
+        android:background="@drawable/button_bg"
+        android:text="Sign Up"/>
+
+    <TextView
+        android:id="@+id/loginWithTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signupButton"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/techno_blue"
+        android:text="Or login with:"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/loginWithTextView"
+        android:layout_marginBottom="2dp"
+        android:src="@drawable/ic_google"
+        android:layout_marginLeft="150dp"
+        android:id="@+id/idGoogle"
+        android:layout_marginStart="215dp"
+        android:layout_marginTop="6dp"></ImageView>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/loginWithTextView"
+        android:src="@drawable/ic_facebook"
+        android:id="@+id/idFacebook"
+        android:layout_marginBottom="2dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="6dp"></ImageView>
+
+
+</RelativeLayout>
